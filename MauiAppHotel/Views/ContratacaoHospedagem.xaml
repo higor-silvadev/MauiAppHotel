@@ -69,7 +69,8 @@
 
                 <Picker x:Name="pck_quarto"
                         Title="Selecione sua Acomodação"
-                        FontFamily="Delius-Regular" />
+                        FontFamily="Delius-Regular" 
+                        ItemDisplayBinding="{Binding Descricao}"/>
 
                 <Frame Padding="10"
                        Margin="0"
@@ -85,7 +86,8 @@
                             <Label Text="Check-in:"
                                    FontFamily="Delius-Regular" />
                             <DatePicker x:Name="dtpck_checkin"
-                                        Format="dd/MM/yyyy" />
+                                        Format="dd/MM/yyyy" 
+                                        DateSelected="dtpck_checkin_DateSelected"/>
                         </HorizontalStackLayout>
 
                         <HorizontalStackLayout Spacing="10">
